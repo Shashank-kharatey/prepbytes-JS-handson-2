@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Handson 2</title>
+    <style>
+        * {
+            font-family:cursive;
+        }
+        body {
+            background-color: rgb(144, 255, 255);
+        }
+        h1 {
+            text-align: center;
+            color: rgb(191, 131, 10);
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVA SCRIPT</h1>
+    <h3>----Decision Making----</h3>
+    <p>Q.1 You are given an integer 
+        A, denoting the age of a person, and your task is to determine whether he/she is eligible to vote or not. Note: You have to complete isEligible function. No need to take any input</p>
+    <p><pre>Ans.1 const isEligible = (a) => {
+           if (a>=18) 
+           {
+           return "Eligible for Voting"
+           }
+           else {
+             return "Not Eligible for Voting"
+           }
+        };
+        </pre>
+    </p>
+    <p>Q.2 PrepBuddy wants you to get familiar with     various Relational operators. He provides you with two integer values X and Y and asks you to find the relation between them.
+        The relationships between integers X and Y are as follows: <br>1. If X < Y, it means that X is smaller than Y. <br>2. If X>Y, it means that X is greater than Y. <br>3. If X=Y, it means that X is equal to Y. Note: You have to complete findRelationship function. No need to take any input.</p>
+    <p><pre>Ans.2 const findRelation = (x,y) => {
+        if (x< y)
+        {
+        return (x+" is smaller than "+y)
+        }
+        else if (x>y)
+        { 
+        return (x+" is greater than "+y)
+        }
+        else
+        {
+        return (x+" is equal to "+y)
+        }
+    };</pre>
+    </p>
+    <p>Q.3 You are given two numbers 
+        A and B. You need to do the following checks: <br>
+        1. if both are divisible by 10 console true. <br>
+        2. if both are not divisible by 10 console false. <br>
+        3. if one of them only is divisible by 10 console true. <br> Use operator to do this. Note: You have to complete Check function. No need to take any input</p>
+    <p><pre>Ans.3 const Check = (A, B) => 
+        {
+          if (A%10==0 && B%10==0) {
+            return true
+          }
+           else if (A%10!=0 && B%10!=0) {
+            return false
+          }
+            else {
+            return true
+          }
+        };</pre>
+    </p>
+    <p>Q.4 You are provided a four digit number N only. Your task is to print out the first digit of that number. Note: You have to complete First_Digit function. No need to take any input.</p>
+    <p><pre>Ans.4 const First_Digit = (n) => {
+        var a=n/1000
+        var b=parseInt(a)
+        return b
+      };</pre>
+    </p>
+    <p>Q.5 You are provided a four digit number N only. Your task is to print out the last digit of that number. Note: You have to complete Last_Digit function. No need to take any input.</p>
+    <p><pre>Ans.5 const Last_Digit = (n) => {
+        var a=n%10
+        return a
+     };</pre>
+    </p>
+    <p>Q.6 You are provided with two numbers A and B where A as divisor and B as dividend.Your task is find the remainder. Note: You have to complete Find_the_remainder function. No need to take any input.</p>
+    <p><pre>Ans.6 const Find_the_remainder = (a,b) => {
+        var c=b%a
+        return c
+    };</pre>
+    </p>
+    <p>Q.7 You are provided with two numbers A and B. Your task is to multiply these two numbers.Note: You have to complete Multiply_two_number function. No need to take any input.</p>
+    <p><pre>Ans.7 const Multiply_two_number = (a,b) => {
+        var c=a*b
+        return c
+    };</pre>
+    </p>
+    <p>Q.8 Shyam has got his marks in three subjects as 
+        A,B, and C (out of 100).Write a program to calculate his total marks and his average. Note: You have to complete Sum and Average functions. No need to take any input.</p>
+    <p><pre>Ans.8 const Sum = (A, B, C) => 
+        {
+         var c=A+B+C
+         return c
+        };
+        
+        const Average = (A, B, C) => 
+        {
+         var d=(A+B+C)/3
+         return d
+        };</pre>
+    </p>
+</body>
+</html>
