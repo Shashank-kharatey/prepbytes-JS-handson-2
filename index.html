@@ -53,42 +53,85 @@
         }
     };</pre>
     </p>
-    <p>Q.3 You are given two numbers 
-        A and B. You need to do the following checks: <br>
-        1. if both are divisible by 10 console true. <br>
-        2. if both are not divisible by 10 console false. <br>
-        3. if one of them only is divisible by 10 console true. <br> Use operator to do this. Note: You have to complete Check function. No need to take any input</p>
-    <p><pre>Ans.3 const Check = (A, B) => 
-        {
-          if (A%10==0 && B%10==0) {
-            return true
-          }
-           else if (A%10!=0 && B%10!=0) {
-            return false
-          }
-            else {
-            return true
-          }
-        };</pre>
-    </p>
-    <p>Q.4 You are provided a four digit number N only. Your task is to print out the first digit of that number. Note: You have to complete First_Digit function. No need to take any input.</p>
-    <p><pre>Ans.4 const First_Digit = (n) => {
-        var a=n/1000
-        var b=parseInt(a)
-        return b
-      };</pre>
-    </p>
-    <p>Q.5 You are provided a four digit number N only. Your task is to print out the last digit of that number. Note: You have to complete Last_Digit function. No need to take any input.</p>
-    <p><pre>Ans.5 const Last_Digit = (n) => {
-        var a=n%10
-        return a
-     };</pre>
-    </p>
-    <p>Q.6 You are provided with two numbers A and B where A as divisor and B as dividend.Your task is find the remainder. Note: You have to complete Find_the_remainder function. No need to take any input.</p>
-    <p><pre>Ans.6 const Find_the_remainder = (a,b) => {
-        var c=b%a
-        return c
+    <p>Q.3 Your school has the following grading system based upon the marks(M) obtained by a student: <br>
+        1. If M ≤ 10, the grade will be E. <br>
+        2. If 11 ≥ M ≤ 20, the grade will be D. <br>
+        3. If 21 ≥ M ≤ 30, the grade will be C. <br>
+        4. If 31 ≥ M ≤ 40 , the grade will be B. <br>
+        5. If 41 ≥ M ≤ 50, the grade will be A. <br>
+        Your friend will enter his marks out of 50, and your task is to print his grades using a switch statement. Note: You have to complete findGrades function. No need to take any input.</p>
+    <p><pre>Ans.3 const findGrades = (a) => {
+        if (a <= 10) {
+          return ("E")
+        }
+        else if (a >= 11 && a <=20) {
+          return ("D")
+        }
+        else if (a >= 21 && a <= 30) {
+          return ("C")
+        }
+        else if (a >= 31 && a <= 40) {
+          return ("B")
+        }
+        else {
+          return ("A")
+        }
     };</pre>
+    </p>
+    <p>Q.4 You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it. <br>
+        | P or p 	- PrepBytes      	| <br>
+        | Z or z 	- Zenith         	| <br>
+        | E or e 	- Expert Coder   	| <br>
+        | D or d 	- Data Structure 	| <br>
+        Note: You have to complete getValue function. No need to take any input.</p>
+    <p><pre>Ans.4 const getValue = (a) => {
+        if (a == "P" || a == "p") {
+          return ("PrepBytes")
+        }
+        else if (a == "Z" || a == "z") {
+          return ("Zenith")
+        }
+        else if (a == "E" || a == "e") {
+          return ("Expert Coder")
+        }
+        else if (a == "D" || a == "d") {
+          return ("Data Structure")
+        }
+    };</pre>
+    </p>
+    <p>Q.5 Take three numbers and print the largest number among them if all of three are same print  
+    −1. Note: You have to complete Max_out_of_three. No need to take any input.</p>
+    <p><pre>Ans.5 const Max_out_of_three = (A,B,C) => {
+        if (A > B && A > C) {
+          return (A)
+        }
+        else if (B > A && B > C) {
+          return (B)
+        }
+        else if (C > B && C > A) {
+          return (C)
+        }
+        else if (A == B && B == C) {
+          return ("-1")
+        }
+    };</pre>
+    </p>
+    <p>Q.6 Write a program to make a simple calculator using switch statement that takes operator and two numbers from user and print the result after operation. Note: You have to complete Calculator. No need to take any input</p>
+    <p><pre>Ans.6 const Calculator = (A, B, C) => 
+        {
+            switch(A) {
+              case "+":
+              return (B+C)
+              case "-":
+              return (B-C)
+              case "*":
+              return (B*C)
+              case "/":
+              return (B/C)
+              default:
+              return "Invalid input"
+            }
+        };</pre>
     </p>
     <p>Q.7 You are provided with two numbers A and B. Your task is to multiply these two numbers.Note: You have to complete Multiply_two_number function. No need to take any input.</p>
     <p><pre>Ans.7 const Multiply_two_number = (a,b) => {
