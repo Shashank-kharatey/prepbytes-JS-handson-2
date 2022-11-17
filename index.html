@@ -133,25 +133,40 @@
             }
         };</pre>
     </p>
-    <p>Q.7 You are provided with two numbers A and B. Your task is to multiply these two numbers.Note: You have to complete Multiply_two_number function. No need to take any input.</p>
-    <p><pre>Ans.7 const Multiply_two_number = (a,b) => {
-        var c=a*b
-        return c
+    <p>Q.7 Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not. Note: You have to complete Check_divisibility. No need to take any input</p>
+    <p><pre>Ans.7 const Check_divisibility = (N) => {
+        if (N%6 === 0 && N%9 === 0) {
+         return ("Divisible by both")
+        }
+        else {
+          return ("Not Divisible by both")
+        }
+     };</pre>
+    </p>
+    <p>Q.8 You are given 3 distinct integers X, Y, and Z, and your task is to find and return the second smallest integer among the three provided integers. Note: You have to complete findSndSmallest function. No need to take any input.</p>
+    <p><pre>Ans.8 const findSndSmallest = (x,y,z) => {
+        if ((x < y && y < z) || (y > z && y < x)) {
+          return (y)
+        }
+        else if ((y < x && x < z) || (x > z && x < y)) {
+          return (x)
+        }
+        else if ((x < z && z < y) || (z > y && z < x)) {
+          return (z)
+        }
     };</pre>
     </p>
-    <p>Q.8 Shyam has got his marks in three subjects as 
-        A,B, and C (out of 100).Write a program to calculate his total marks and his average. Note: You have to complete Sum and Average functions. No need to take any input.</p>
-    <p><pre>Ans.8 const Sum = (A, B, C) => 
-        {
-         var c=A+B+C
-         return c
-        };
-        
-        const Average = (A, B, C) => 
-        {
-         var d=(A+B+C)/3
-         return d
-        };</pre>
+    <p>Q.9 Write a program takes takes three angles and checks whether the triangle is acute or obtuse.
+     Note: You have to complete Triangle_Check. No need to take any input</p>
+    <p><pre>Ans.9 const Triangle_Check = (A,B,C) => {
+        if (A>90 || B>90 || C>90) {
+          return ("obtuse")
+        }
+        else {
+          return ("acute")
+        }
+         
+     };</pre>
     </p>
 </body>
 </html>
